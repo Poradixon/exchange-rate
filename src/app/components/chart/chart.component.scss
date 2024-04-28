@@ -1,0 +1,29 @@
+.glass {
+  height: 50vh;
+  width: 38vw;
+  padding-top: 1em;
+}
+
+.chart-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  label {
+    font-size: 1.5em;
+  }
+}
+
+input {
+  border-radius: 1em;
+  outline: none;
+  border: none;
+  height: 2.5em;
+  padding: 0 0.2em;
+  cursor: pointer;
+
+  &:hover {
+    background-color: grey;
+  }
+}
+
+

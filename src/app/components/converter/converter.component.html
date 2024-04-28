@@ -1,0 +1,40 @@
+<app-header></app-header>
+<div class="welcome">
+  <div class="glass">
+    <form [formGroup]="form" (ngSubmit)="calculate(form.get('currencyFrom')?.value, form.get('currencyTo')?.value)">
+      <div class="currencies">
+        <label>
+          Exchange from:
+          <select formControlName="currencyFrom">
+            <option value="PLN" selected>PLN</option>
+            <option value="USD">USD</option>
+            <option value="GBP">GBP</option>
+            <option value="CHF">CHF</option>
+          </select>
+        </label>
+
+        <label>
+          to:
+          <select formControlName="currencyTo">
+            <option value="PLN">PLN</option>
+            <option value="USD" selected>USD</option>
+            <option value="GBP">GBP</option>
+            <option value="CHF">CHF</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="amount">
+        <label>
+          Amount:
+          <textarea formControlName="amount"></textarea>
+        </label>
+        <input type="submit" value="Calculate"/>
+      </div>
+
+      <p>{{ value }}</p>
+
+    </form>
+
+  </div>
+</div>

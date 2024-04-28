@@ -1,0 +1,57 @@
+<app-header></app-header>
+<div class="welcome">
+  <div class="glass">
+    <form [formGroup]="form" (ngSubmit)="getChart()">
+      <div class="chart-form">
+        <label>
+          From:
+          <select formControlName="from">
+            <option value="PLN" selected>PLN</option>
+            <option value="USD">USD</option>
+            <option value="GBP">GBP</option>
+            <option value="CHF">CHF</option>
+          </select>
+        </label>
+
+        <label>
+          To:
+          <select formControlName="to">
+            <option value="PLN">PLN</option>
+            <option value="USD" selected>USD</option>
+            <option value="GBP">GBP</option>
+            <option value="CHF">CHF</option>
+          </select>
+        </label>
+
+        <label> Date from:
+          <input type="date" formControlName="fromDate">
+        </label>
+        <label> Date to:
+          <input type="date" formControlName="toDate">
+        </label>
+      </div>
+
+      <div>
+        <input type="submit" value="Create Chart"/>
+      </div>
+    </form>
+    <ngx-charts-line-chart *ngIf="data.length"
+                           [view]="view"
+                           [scheme]="colorScheme"
+                           [results]="data"
+                           [legend]="legend"
+                           [showXAxisLabel]="showXAxisLabel"
+                           [xAxis]="xAxis"
+                           [showYAxisLabel]="showYAxisLabel"
+                           [yAxis]="yAxis"
+                           [xAxisLabel]="xAxisLabel"
+                           [yAxisLabel]="yAxisLabel"
+                           [timeline]="timeline"
+                           [autoScale]="autoScale">
+    </ngx-charts-line-chart>
+  </div>
+</div>
+
+
+
+

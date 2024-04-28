@@ -1,0 +1,26 @@
+.image {
+  box-sizing: border-box;
+  width: 100vw;
+  height: 93vh;
+}
+
+.box {
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, .25);
+  backdrop-filter: blur(5px);
+  margin-bottom: 5em;
+  color: black;
+
+  h5 {
+    font-size: 4em;
+    margin-bottom: 1em;
+    padding-top: 1em;
+  }
+
+  p {
+    font-size: 4em;
+    padding-bottom: 1em;
+  }
+
+}

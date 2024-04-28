@@ -1,0 +1,18 @@
+{
+  "cities": [
+  {
+    "from": "GBP",
+    "to": "USD",
+    "city": "newyork"
+  },
+  {
+    "from": "USD",
+    "to": "CHF",
+    "city": "bern"
+  },
+  {
+    "from": "CHF",
+    "to": "GBP",
+    "city": "london"
+  }
+]}

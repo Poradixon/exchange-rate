@@ -1,0 +1,41 @@
+.currencies {
+  margin: 1em 0;
+  font-size: 1.5em;
+}
+
+.amount {
+  display: flex;
+  justify-content: center;
+
+  label {
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+  }
+
+  textarea {
+    margin: 0 0.5em;
+    border-radius: 0.5em;
+    text-align: center;
+    height: 2em;
+    line-height: 1.8em;
+  }
+
+  input {
+    border-radius: 1em;
+    outline: none;
+    border: none;
+    height: 2.5em;
+    padding: 0 0.2em;
+    cursor: pointer;
+
+    &:hover {
+      background-color: grey;
+    }
+  }
+}
+
+p {
+  margin-top: 1em;
+  font-size: 3em;
+}
